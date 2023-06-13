@@ -1,6 +1,10 @@
 package com.maxvision.karc
 
+import android.app.Activity
+import android.app.ActivityManager
 import android.app.Application
+import android.content.Context
+import android.os.Bundle
 
 /**
  * user: zjj
