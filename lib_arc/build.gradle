@@ -39,6 +39,9 @@ dependencies {
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.androidx.material
+    implementation libs.gson
+    implementation libs.refreshlayout
+    implementation libs.tbssdk
 
     implementation libs.androidx.test.ext
     implementation libs.junit4
