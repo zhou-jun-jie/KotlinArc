@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 rootProject.name = "KotlinArc"
 include ':app'
 include ':lib_arc'
+include ':module_login'
+include ':module_init'
+include ':lib_common'

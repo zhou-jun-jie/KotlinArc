@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.maxvision.base'
+    namespace 'com.maxvision.tech.common'
     compileSdk 33
 
     defaultConfig {
@@ -28,14 +28,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        dataBinding = true
-        viewBinding = true
-    }
 }
 
 dependencies {
-
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.androidx.material
@@ -45,5 +40,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation libs.androidx.test.espresso.core
 
-
+    // 依赖
+    api project(":lib_arc")
 }

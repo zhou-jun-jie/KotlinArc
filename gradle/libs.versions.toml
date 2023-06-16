@@ -1,13 +1,35 @@
 [versions]
+# 项目自带
+#plugin
 androidGradlePlugin = "8.0.1"
 kotlin = "1.7.20"
+#library
+androidxCoreKtx = "1.8.0"
+androidxAppCompat = "1.6.1"
+androidxMaterial = "1.9.0"
+androidxTestExt = "1.1.4"
+junit4 = "4.13.2"
+androidxEspresso = "3.5.1"
+# 后期添加
 hilt = "2.44"
 
 [libraries]
+# 项目自带
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCoreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-material = { group = "com.google.android.material", name = "material", version.ref = "androidxMaterial" }
+androidx-test-ext = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "androidxTestExt" }
+junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
+# 后期添加
 hilt-android = {group = "com.google.dagger",name = "hilt-android",version.ref = "hilt"}
 
 [plugins]
+# 插件依赖xxx-xxx,那么就是xxx.xxx,以android-application为例 
+# 前缀:libs.plugins.android.application
+# 项目自带 
 android-application = {id = "com.android.application",version.ref = "androidGradlePlugin"}
 android-library = {id = "com.android.library",version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# 后期添加
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
