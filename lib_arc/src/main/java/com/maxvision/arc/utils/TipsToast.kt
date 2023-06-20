@@ -40,6 +40,13 @@ object TipsToast {
         )
     }
 
+    fun showTips(msg: String?) {
+        showTipsImpl(
+            msg,
+            Toast.LENGTH_SHORT
+        )
+    }
+
     fun showTips(@StringRes stringId: Int, duration: Int) {
         val msg = mContext.getString(stringId)
         showTipsImpl(msg, duration)

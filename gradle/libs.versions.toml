@@ -15,6 +15,13 @@ hilt = "2.44"
 refreshLayout = "2.0.5"
 gson = "2.10.1"
 tbssdk = "44132"
+refrofit2 = "2.9.0"
+retrofitGsonVersion = "2.4.0"
+okhttp3LogVersion = "3.11.0"
+lifecycleKtx = "2.3.1"
+mmkvVersion = "1.2.15"
+roomVersion = "2.5.0"
+
 
 [libraries]
 # 项目自带
@@ -26,20 +33,33 @@ junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
 androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
 # 后期添加
 #依赖注入
-hilt-android = {group = "com.google.dagger",name = "hilt-android",version.ref = "hilt"}
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 #下拉刷新
-refreshlayout = {group = "io.github.scwang90",name = "refresh-layout-kernel",version.ref = "refreshLayout"}
-refreshheader = {group = "io.github.scwang90",name = "refresh-header-classics",version.ref = "refreshLayout"}
-refreshfooter = {group = "io.github.scwang90",name = "refresh-footer-classics",version.ref = "refreshLayout"}
-gson = {group = "icom.google.code.gson",name = "gson",version.ref = "gson"}
-tbssdk = {group = "com.tencent.tbs",name = "tbssdk",version.ref = "tbssdk"}
+refreshlayout = { group = "io.github.scwang90", name = "refresh-layout-kernel", version.ref = "refreshLayout" }
+refreshheader = { group = "io.github.scwang90", name = "refresh-header-classics", version.ref = "refreshLayout" }
+refreshfooter = { group = "io.github.scwang90", name = "refresh-footer-classics", version.ref = "refreshLayout" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+tbssdk = { group = "com.tencent.tbs", name = "tbssdk", version.ref = "tbssdk" }
+#网络框架-http
+retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "refrofit2" }
+retrofit2Gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitGsonVersion" }
+loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3LogVersion" }
+# liveData
+liveDataKtx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleKtx" }
+viewModelKtx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleKtx" }
+# 数据存储
+mmkv = { group = "com.tencent", name = "mmkv", version.ref = "mmkvVersion" }
+# room数据库
+roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
 
 [plugins]
 # 插件依赖xxx-xxx,那么就是xxx.xxx,以android-application为例 
 # 前缀:libs.plugins.android.application
 # 项目自带 
-android-application = {id = "com.android.application",version.ref = "androidGradlePlugin"}
-android-library = {id = "com.android.library",version.ref = "androidGradlePlugin" }
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 # 后期添加
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+#kapt = { id = "kotlin-kapt", version.ref = "kotlin"}
