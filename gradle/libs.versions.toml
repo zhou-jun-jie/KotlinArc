@@ -62,4 +62,3 @@ android-library = { id = "com.android.library", version.ref = "androidGradlePlug
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 # 后期添加
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-#kapt = { id = "kotlin-kapt", version.ref = "kotlin"}
