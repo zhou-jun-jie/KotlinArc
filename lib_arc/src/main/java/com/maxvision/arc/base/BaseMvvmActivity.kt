@@ -18,11 +18,19 @@ abstract class BaseMvvmActivity<DB : ViewBinding,VM : ViewModel> : BaseDataBindA
     override fun onCreate(savedInstanceState: Bundle?) {
         initViewModel()
         super.onCreate(savedInstanceState)
+        setMsgListener()
     }
 
     private fun initViewModel() {
         val argument = (this.javaClass.genericSuperclass as ParameterizedType).actualTypeArguments
         mViewModel = ViewModelProvider(this)[argument[1] as Class<VM>]
     }
+
+    private fun setMsgListener() {
+
+
+    }
+
+
 
 }

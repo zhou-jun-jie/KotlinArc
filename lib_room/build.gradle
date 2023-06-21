@@ -36,7 +36,7 @@ dependencies {
     implementation libs.roomKtx
     kapt libs.roomCompiler
 
-    api project(":lib_arc")
-    api project(":lib_common")
+    compileOnly project(":lib_arc")
+    compileOnly project(":lib_common")
 
 }

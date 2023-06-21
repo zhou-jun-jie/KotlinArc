@@ -36,13 +36,13 @@ android {
 
 dependencies {
 
-    implementation libs.androidx.core.ktx
-    implementation libs.androidx.appcompat
-    implementation libs.androidx.material
-    implementation libs.gson
-    implementation libs.refreshlayout
-    implementation libs.tbssdk
-    implementation libs.mmkv
+    api libs.androidx.core.ktx
+    api libs.androidx.appcompat
+    api libs.androidx.material
+    api libs.gson
+    api libs.refreshlayout
+    api libs.tbssdk
+    api libs.mmkv
     api libs.liveDataKtx
     api libs.viewModelKtx
 

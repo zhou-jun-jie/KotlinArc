@@ -18,4 +18,5 @@ open class BaseViewModel(application: Application) : AndroidViewModel(applicatio
     val toastMsg = MutableLiveData<String>()
 
 
+
 }

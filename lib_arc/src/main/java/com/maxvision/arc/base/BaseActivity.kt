@@ -1,8 +1,10 @@
 package com.maxvision.arc.base
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
+import com.maxvision.arc.utils.BarUtils
 import com.maxvision.arc.utils.LoadingUtils
 import com.maxvision.arc.utils.TipsToast
 import com.maxvision.base.R
@@ -21,6 +23,8 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        BarUtils.setStatusBarColor(this, Color.TRANSPARENT)
+        BarUtils.setStatusBarLightMode(this, true)
         super.onCreate(savedInstanceState)
         setContentLayout()
         initView(savedInstanceState)
