@@ -18,7 +18,8 @@ tbssdk = "44132"
 refrofit2 = "2.9.0"
 retrofitGsonVersion = "2.4.0"
 okhttp3LogVersion = "3.11.0"
-lifecycleKtx = "2.3.1"
+# 用2.3.1会报错重复依赖
+lifecycleKtx = "2.4.0"
 mmkvVersion = "1.2.15"
 roomVersion = "2.5.0"
 
