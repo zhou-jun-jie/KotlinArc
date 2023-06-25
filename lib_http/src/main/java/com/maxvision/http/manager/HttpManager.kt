@@ -40,8 +40,8 @@ object HttpManager {
             .connectTimeout(15, TimeUnit.SECONDS)
             .writeTimeout(15, TimeUnit.SECONDS)
             .readTimeout(15, TimeUnit.SECONDS)
-            .addInterceptor(CookiesInterceptor())
-            .addInterceptor(HeaderInterceptor())
+//            .addInterceptor(CookiesInterceptor())
+//            .addInterceptor(HeaderInterceptor())
         // 添加日志拦截器
         val logInterceptor = HttpLoggingInterceptor()
         if (AppHelper.isDebug()) {

@@ -59,7 +59,7 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     // 关闭dialog
-    fun dismissLoading() {
+    fun hideLoading() {
         dialogUtils.dismissLoading()
     }
 

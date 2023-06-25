@@ -10,6 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // 适配器添加
+        maven { url "https://jitpack.io" }
     }
 }
 rootProject.name = "KotlinArc"

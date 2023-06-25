@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
+import com.maxvision.arc.utils.TipsToast
 import java.lang.reflect.ParameterizedType
 
 /**
@@ -11,7 +12,7 @@ import java.lang.reflect.ParameterizedType
  * date: 2023/6/2
  * desc: dataBinding + viewModel基类
  */
-abstract class BaseMvvmActivity<DB : ViewBinding,VM : ViewModel> : BaseDataBindActivity<DB>() {
+abstract class BaseMvvmActivity<DB : ViewBinding,VM : BaseViewModel> : BaseDataBindActivity<DB>() {
 
     lateinit var mViewModel : VM
 
@@ -27,10 +28,16 @@ abstract class BaseMvvmActivity<DB : ViewBinding,VM : ViewModel> : BaseDataBindA
     }
 
     private fun setMsgListener() {
-
-
+        mViewModel.loadingMsg.observe(this) {
+            if (it.isNullOrEmpty()) {
+                hideLoading()
+            } else {
+                showLoading()
+            }
+        }
+        mViewModel.toastMsg.observe(this) {
+            TipsToast.showTips(it)
+        }
     }
-
-
 
 }

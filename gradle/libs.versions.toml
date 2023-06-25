@@ -22,6 +22,7 @@ okhttp3LogVersion = "3.11.0"
 lifecycleKtx = "2.4.0"
 mmkvVersion = "1.2.15"
 roomVersion = "2.5.0"
+baseAdapter = "3.0.11"
 
 
 [libraries]
@@ -39,6 +40,8 @@ hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref
 refreshlayout = { group = "io.github.scwang90", name = "refresh-layout-kernel", version.ref = "refreshLayout" }
 refreshheader = { group = "io.github.scwang90", name = "refresh-header-classics", version.ref = "refreshLayout" }
 refreshfooter = { group = "io.github.scwang90", name = "refresh-footer-classics", version.ref = "refreshLayout" }
+#列表适配器
+baseAdapter = {group = "io.github.cymchad",name = "BaseRecyclerViewAdapterHelper",version.ref = "baseAdapter"}
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 tbssdk = { group = "com.tencent.tbs", name = "tbssdk", version.ref = "tbssdk" }
 #网络框架-http

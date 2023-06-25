@@ -2,4 +2,8 @@
 <resources>
     <string name="default_loading">加载中...</string>
     <string name="base_app_exit_one_more_press">再按一次退出程序</string>
+
+    <string name="sure">确定</string>
+    <string name="network_error">网络异常</string>
+    <string name="data_empty">暂无数据</string>
 </resources>

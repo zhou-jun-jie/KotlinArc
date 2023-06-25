@@ -45,6 +45,7 @@ dependencies {
     api libs.mmkv
     api libs.liveDataKtx
     api libs.viewModelKtx
+    api libs.baseAdapter
 
     implementation libs.androidx.test.ext
     implementation libs.junit4

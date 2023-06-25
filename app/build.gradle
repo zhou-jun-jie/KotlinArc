@@ -50,5 +50,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     // 依赖
-    api project(":lib_arc")
+    api project(":lib_common")
+    api project(":lib_http")
 }

@@ -33,5 +33,4 @@ android {
 dependencies {
     // 依赖
     api project(":lib_arc")
-    api project(":lib_http")
 }

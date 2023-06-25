@@ -1,22 +1,21 @@
 package com.maxvision.arc.manager
 
 import android.app.Activity
-import android.app.Application
 
 /**
  * user: zjj
  * date: 2023/5/26
- * desc: 描述
+ * desc: activity管理类
  */
-class ActivityManager {
+object ActivityManager {
 
     private val tasks = mutableListOf<Activity>()
 
-    fun push(activity: Activity) {
+    fun add(activity: Activity) {
         tasks.add(activity)
     }
 
-    fun pop(activity: Activity) {
+    fun remove(activity: Activity) {
         tasks.remove(activity)
     }
 
