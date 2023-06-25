@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id 'kotlin-kapt'
 }
 
 android {
@@ -17,6 +18,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
+        }
+        // Arouter
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
         }
     }
 
@@ -52,4 +59,7 @@ dependencies {
     // 依赖
     api project(":lib_common")
     api project(":lib_http")
+
+    implementation libs.arouterApi
+    kapt libs.arouterCompiler
 }

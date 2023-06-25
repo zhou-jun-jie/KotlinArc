@@ -11,7 +11,7 @@ androidxTestExt = "1.1.4"
 junit4 = "4.13.2"
 androidxEspresso = "3.5.1"
 # 后期添加
-hilt = "2.44"
+#hilt = "2.44"
 refreshLayout = "2.0.5"
 gson = "2.10.1"
 tbssdk = "44132"
@@ -23,6 +23,7 @@ lifecycleKtx = "2.4.0"
 mmkvVersion = "1.2.15"
 roomVersion = "2.5.0"
 baseAdapter = "3.0.11"
+arouterVersion = "1.5.2"
 
 
 [libraries]
@@ -35,7 +36,7 @@ junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
 androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
 # 后期添加
 #依赖注入
-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+#hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 #下拉刷新
 refreshlayout = { group = "io.github.scwang90", name = "refresh-layout-kernel", version.ref = "refreshLayout" }
 refreshheader = { group = "io.github.scwang90", name = "refresh-header-classics", version.ref = "refreshLayout" }
@@ -56,6 +57,9 @@ mmkv = { group = "com.tencent", name = "mmkv", version.ref = "mmkvVersion" }
 # room数据库
 roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
 roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+# 路由
+arouterApi = {group = "com.alibaba",name = "arouter-api" ,version.ref = "arouterVersion"}
+arouterCompiler = {group = "com.alibaba",name = "arouter-compiler" ,version.ref = "arouterVersion"}
 
 [plugins]
 # 插件依赖xxx-xxx,那么就是xxx.xxx,以android-application为例 
@@ -65,4 +69,4 @@ android-application = { id = "com.android.application", version.ref = "androidGr
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 # 后期添加
-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+#hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
