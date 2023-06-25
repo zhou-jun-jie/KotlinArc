@@ -1,4 +1,4 @@
-package com.maxvision.arc.base
+package com.maxvision.tech.common.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.MutableLiveData

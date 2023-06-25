@@ -1,6 +1,7 @@
 package com.maxvision.http.viewmodel
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.maxvision.http.callback.IApiErrorCallback
 import com.maxvision.http.constant.TIME_OUT
@@ -19,7 +20,7 @@ import kotlinx.coroutines.withTimeout
  * date: 2023/6/20
  * desc: 基类viewModel
  */
-open class BaseViewModel : ViewModel() {
+open class HttpViewModel(application: Application) : AndroidViewModel(application) {
 
     /**
      * 运行在主线程中，可直接调用
