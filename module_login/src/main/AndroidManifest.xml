@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name="com.maxvision.tech.login.ui.activity.LoginActivity"
+            android:name="com.maxvision.tech.login.com.zjj.login.ui.activity.LoginActivity"
             android:exported="true" />
     </application>
 

@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.maxvision.http'
-    compileSdk 33
+    namespace 'com.zjj.http'
+    compileSdk sdkversion.compileSdkVersion
 
     defaultConfig {
-        minSdk 24
-        targetSdk 33
+        minSdk sdkversion.minSdkVersion
+        targetSdk sdkversion.targetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"

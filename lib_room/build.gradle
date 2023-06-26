@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace 'com.maxvision.room'
-    compileSdk 33
+    namespace 'com.zjj.room'
+    compileSdk sdkversion.compileSdkVersion
 
     defaultConfig {
-        minSdk 24
-        targetSdk 33
+        minSdk sdkversion.minSdkVersion
+        targetSdk sdkversion.targetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -38,5 +38,4 @@ dependencies {
 
     compileOnly project(":lib_arc")
     compileOnly project(":lib_common")
-
 }

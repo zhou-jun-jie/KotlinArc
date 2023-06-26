@@ -13,7 +13,7 @@
         tools:ignore="ScopedStorage" />
 
     <application
-        android:name=".RobotApplication"
+        android:name="com.zjj.karc.CustomApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -25,7 +25,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.zjj.karc.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
@@ -36,6 +36,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.zjj.karc.ui.report.ReportListActivity"
+            android:screenOrientation="landscape" />
+
     </application>
 
 </manifest>

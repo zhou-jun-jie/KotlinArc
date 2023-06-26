@@ -24,7 +24,7 @@ mmkvVersion = "1.2.15"
 roomVersion = "2.5.0"
 baseAdapter = "3.0.11"
 arouterVersion = "1.5.2"
-
+utilcodex = "1.30.6"
 
 [libraries]
 # 项目自带
@@ -60,7 +60,8 @@ roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = 
 # 路由
 arouterApi = {group = "com.alibaba",name = "arouter-api" ,version.ref = "arouterVersion"}
 arouterCompiler = {group = "com.alibaba",name = "arouter-compiler" ,version.ref = "arouterVersion"}
-
+# 工具类
+utilcodex = {group = "com.blankj",name = "utilcodex",version.ref = "utilcodex"}
 [plugins]
 # 插件依赖xxx-xxx,那么就是xxx.xxx,以android-application为例 
 # 前缀:libs.plugins.android.application

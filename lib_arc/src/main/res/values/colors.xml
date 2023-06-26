@@ -22,4 +22,5 @@
     <color name="status_bar_bg">#27000000</color>
 
     <color name="main_color">#FFF5F5F5</color>
+    <color name="transparent_black">#70000000</color>
 </resources>

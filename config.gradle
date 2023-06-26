@@ -1,0 +1,14 @@
+ext {
+    sdkversion = [
+            compileSdkVersion: 33,
+            targetSdkVersion : 33,
+            minSdkVersion    : 24,
+    ]
+
+    app = [
+            applicationId: "com.zjj.karc",
+            versionCode  : 100,
+            versionName  : "V0.0.0",
+            testCode     : 1
+    ]
+}
